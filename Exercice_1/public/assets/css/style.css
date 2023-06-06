@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.box-img {
+    background-image: url("../img/coworking-portrait.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* min-width: 100vw; */
+    min-height: 100vh;
+}
+
+@media screen and (orientation: landscape) {
+    .box-img {
+        background-image: url("../img/coworking-paysage.jpg");
+    }
+}
+
+@media screen and (min-width:1024px){
+    .box-img {
+        min-height: 50vh;
+    }
+    .container{
+        display: flex;
+    }
+}
+@media screen and (min-width:577px) {
+    .container-list{
+        display: flex;
+        justify-content: space-around;
+    }
+}
