@@ -1,13 +1,59 @@
-*{
+/* RESET */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    padding: 3%;
+    font-size: 1.6rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* FOOTER */
+footer {
+    background-color: rgb(11, 167, 167);
+}
+footer li {
+    padding-block: 4%;
+    color: aliceblue;
+    font-size: 2rem;
+}
+
+
 .box-img {
     background-image: url("../img/coworking-portrait.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     /* min-width: 100vw; */
     min-height: 100vh;
+}
+footer ul li {
+    list-style: none;
+}
+
+.container {
+    padding-block: 8%;
+}
+
+.container h1 {
+    padding-block: 4%;
+}
+.container>:nth-child(1) {
+    border: 2px solid  rgb(11, 167, 167) ;
+}
+article {
+    padding: 2%;
 }
 
 @media screen and (orientation: landscape) {
@@ -16,17 +62,21 @@
     }
 }
 
-@media screen and (min-width:1024px){
+@media screen and (min-width:1024px) {
     .box-img {
         min-height: 50vh;
     }
-    .container{
+
+    .container {
         display: flex;
+        column-gap: 4%;
     }
 }
+
 @media screen and (min-width:577px) {
-    .container-list{
-        display: flex;
+    .container-list {
+        flex-direction: row;
         justify-content: space-around;
     }
 }
+
